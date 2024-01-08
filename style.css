@@ -1,0 +1,91 @@
+* {
+  -webkit-box-sizing: border-box;
+  -mos-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 208, 0);
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px black;
+  background-color: white;
+  border: 1px solid;
+  margin: 100px auto;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 15px 15px black;
+}
+
+.card img.main {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card span {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: rgb(255, 208, 0);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card p:nth-of-type(1) {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.card h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card h1:hover {
+  color: rgb(255, 208, 0);
+}
+
+.card p.des {
+  color: #bababa;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.card .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.card .profile img {
+  width: 30px;
+  height: 30px;
+}
+
+.card .profile p {
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 300px;
+    margin-top: 200px;
+  }
+  .card h1 {
+    font-size: 21px;
+  }
+}
